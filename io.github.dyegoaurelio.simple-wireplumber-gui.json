@@ -32,14 +32,14 @@
         {
           "type": "git",
           "url": "https://github.com/dyegoaurelio/simple-wireplumber-gui/",
-          "tag": "0.1.2",
-          "commit": "1305896a215712c4ec2020ecd6d26ccb9ba61a80"
+          "tag": "0.1.1",
+          "commit": "70491359b7f06cd6c8dfe9aba079d11166edc6a1"
         },
         {
           "type": "git",
           "url": "https://github.com/dyegoaurelio/simple-wireplumber-gui/",
-          "tag": "0.1.1",
-          "commit": "70491359b7f06cd6c8dfe9aba079d11166edc6a1"
+          "tag": "0.1.2",
+          "commit": "1305896a215712c4ec2020ecd6d26ccb9ba61a80"
         }
       ]
     }
