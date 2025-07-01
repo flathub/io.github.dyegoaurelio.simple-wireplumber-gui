@@ -10,7 +10,7 @@
     "--device=dri",
     "--share=ipc",
     "--filesystem=xdg-run/pipewire-0",
-    "--filesystem=~/.config/wireplumber/"
+    "--filesystem=xdg-config/wireplumber/:create"
   ],
   "cleanup": [
     "/include",
@@ -32,8 +32,8 @@
         {
           "type": "git",
           "url": "https://github.com/dyegoaurelio/simple-wireplumber-gui/",
-          "tag": "0.2.0",
-          "commit": "85f0d316a27500c1be443eefc3b5314199fb770d"
+          "tag": "0.2.1",
+          "commit": "8be1ebeaee11b00a588ae922c8784e7a7175050f"
         }
       ]
     }
