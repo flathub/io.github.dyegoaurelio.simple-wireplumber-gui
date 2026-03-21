@@ -1,7 +1,7 @@
 {
   "app-id": "io.github.dyegoaurelio.simple-wireplumber-gui",
   "runtime": "org.gnome.Platform",
-  "runtime-version": "48",
+  "runtime-version": "50",
   "sdk": "org.gnome.Sdk",
   "command": "simple-wireplumber-gui",
   "finish-args": [
@@ -11,17 +11,6 @@
     "--share=ipc",
     "--filesystem=xdg-run/pipewire-0",
     "--filesystem=xdg-config/wireplumber/:create"
-  ],
-  "cleanup": [
-    "/include",
-    "/lib/pkgconfig",
-    "/man",
-    "/share/doc",
-    "/share/gtk-doc",
-    "/share/man",
-    "/share/pkgconfig",
-    "*.la",
-    "*.a"
   ],
   "modules": [
     {
@@ -34,6 +23,10 @@
           "url": "https://github.com/dyegoaurelio/simple-wireplumber-gui/",
           "tag": "0.2.2",
           "commit": "0d5b7a180c06172be0355fadc4560b09ba97c8a9"
+        },
+        {
+          "type": "patch",
+          "path": "fix-appdata.patch"
         }
       ]
     }
