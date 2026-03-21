@@ -1,0 +1,46 @@
+From d09c8ee71fc3d2390f0e24fd3af6a336c104a078 Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Sat, 21 Mar 2026 23:50:32 +0300
+Subject: [PATCH] Fix appdata paper cuts
+
+### Fix spurious text error
+
+> "E:io.github.dyegoaurelio.simple-wireplumber-gui.metainfo.xml:description-spurious-text:64
+> The description element contains raw text that is not in any paragraph or other permitted tag.
+> This is not allowed and the additional text may be ignored by parsers or raise errors.
+
+### Drop developer_name tag
+
+Drop deprecated developer_name tag.
+---
+ data/io.github.dyegoaurelio.simple-wireplumber-gui.appdata.xml.in | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/data/io.github.dyegoaurelio.simple-wireplumber-gui.appdata.xml.in b/data/io.github.dyegoaurelio.simple-wireplumber-gui.appdata.xml.in
+index 618c3eb..ab91941 100644
+--- a/data/io.github.dyegoaurelio.simple-wireplumber-gui.appdata.xml.in
++++ b/data/io.github.dyegoaurelio.simple-wireplumber-gui.appdata.xml.in
+@@ -2,7 +2,6 @@
+ <component type="desktop">
+ 	<name>Simple Wireplumber GUI</name>
+ 	<id>io.github.dyegoaurelio.simple-wireplumber-gui</id>
+-	<developer_name>Dyego Aurélio</developer_name>
+ 	<developer id="io.github.dyegoaurelio">
+ 		<name>Dyego Aurélio</name>
+ 	</developer>
+@@ -52,9 +51,10 @@
+ 		A simple GTK4 GUI for PipeWire
+ 	</summary>
+ 	<description>
+-		<p>Simple Wireplumber GUI</p> With this tool you can easily rename and see the properties of
++		<p>With this tool you can easily rename and see the properties of
+ 		your audio devices if you're running `pipewire` as your audio server and `wireplumber` as
+-		it's session and policy manager. </description>
++    it's session and policy manager.</p>
++  </description>
+ 	<content_rating type="oars-1.1" />
+ 
+ 	<launchable type="desktop-id">io.github.dyegoaurelio.simple-wireplumber-gui.desktop</launchable>
+--
+libgit2 1.7.2
+
